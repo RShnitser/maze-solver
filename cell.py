@@ -19,6 +19,7 @@ class Cell:
         self._y1 = y1
         self._x2 = x2
         self._y2 = y2
+        self.visited = False
         if self.has_left_wall:
             self._win.draw_line(Line(Point(x1, y1), Point(x1, y2)), "black")
         else:
