@@ -104,6 +104,11 @@ class Maze:
                 curr.has_bottom_wall = False
 
             self._break_walls_r(dir[1], dir[0])
+
+    def _reset_cells_visited(self):
+        for col in self._cells:
+            for  cell in col:
+                cell.visited = False
             
             
 
